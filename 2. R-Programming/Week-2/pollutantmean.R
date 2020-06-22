@@ -22,7 +22,3 @@ pollutantMean <- function(directory, pollutant, id = 1:332) {
   ret <- mean(data_to_use)
   ret
 }
-
-print(pollutantMean("specdata", "sulfate", 1:10))
-print(pollutantMean("specdata", "nitrate", 70:72))
-print(pollutantMean("specdata", "nitrate", 23))
