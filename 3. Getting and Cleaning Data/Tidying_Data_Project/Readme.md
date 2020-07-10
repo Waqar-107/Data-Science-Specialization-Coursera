@@ -7,11 +7,13 @@ actual data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%
 
 ## Files:
 * #### run_analysis.R:
-  1. Merges the training and the test sets to create one data set.
-  2. Extracts only the measurements on the mean and standard deviation for each measurement.
-  3. Uses descriptive activity names to name the activities in the data set
-  4. Appropriately labels the data set with descriptive variable names.
-  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+  1. Download the zip file, unzip it an delete the zip file.
+  2. Read the feature list, activity list file, variable, labels and subject files of both test and train folder.
+  3. Rename the columns of variable tables with feature name. From these tables xtract the required features.
+  4. Merge activity tables with activity list.
+  5. Finally merge test, subject and activity list. Do this for train data also.
+  6. Merge test and train data.
+  7. From the data set in step 6, creates a second, independent tidy data set with the average of each variable for each activity and each subject
   
 * #### codebook.md:
   Informations of variables and their units and the output. 
