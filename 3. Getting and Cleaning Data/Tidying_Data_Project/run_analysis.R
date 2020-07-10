@@ -87,5 +87,5 @@ dataSet2 <- dataSet %>%
 #####################################################
 # write the data
 #####################################################
-write.table(dataSet, "TidyData.txt")
-write.table(dataSet2, "TidyDataMean.txt")
+write.table(dataSet, "TidyData.txt", row.names = FALSE)
+write.table(dataSet2, "TidyDataMean.txt", row.names = FALSE)
