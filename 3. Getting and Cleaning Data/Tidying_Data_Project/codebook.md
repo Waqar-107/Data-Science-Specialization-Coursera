@@ -34,7 +34,7 @@
 
 <b>trainDataFinal:</b> dataframe of dimension `7352 69` that has the trainSubjects, trainVariables and trainActivities merged.
 
-<b>dataSet:</b> final dataset test and train merged. total 69 types of variable
+<b>dataSet:</b> final dataset test and train merged. total 68 types of variable
 
  [1] "activityName"                                  
  [2] "subject"                                       
