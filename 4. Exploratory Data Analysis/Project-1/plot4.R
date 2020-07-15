@@ -1,4 +1,10 @@
-#library(lubridate)
+library(lubridate)
+
+# download data and unzip
+url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+download.file(url, "dataset.zip", "curl")
+unzip("dataset.zip")
+file.remove("dataset.zip")
 
 # date range of the required data
 startDate <- ymd("2007-02-01")
@@ -27,7 +33,7 @@ subMetering2 <- as.numeric(data$Sub_metering_2)
 subMetering3 <- as.numeric(data$Sub_metering_3)
 
 # 4
-globalReactivePower <- as.numeric(data$Global_active_power)
+globalReactivePower <- as.numeric(data$Global_reactive_power)
 
 # png
 png("plot4.png", width = 480, height = 480)
